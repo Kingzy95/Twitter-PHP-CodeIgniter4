@@ -1,0 +1,87 @@
+@import url(font.css);
+@import url(form.css);
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: #000;
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    height: 660px;
+}
+
+main .left-banner {
+    width: 38%;
+}
+
+main .left-banner img.back-img {
+    width: 100%;
+    height: 100%;
+}
+
+main .left-banner img.top-img {
+    width: 380px;
+    position: absolute;
+    left: 4%;
+    top: 35%;
+}
+
+main .right-banner {
+    width: 62%;
+    padding: 30px;
+}
+
+main .right-banner .top img {
+    width: 41px;
+}
+
+main .right-banner h1 {
+    margin-top: 69px;
+    font-size: 62px;
+}
+
+main .right-banner h2 {
+    margin-top: 44px;
+}
+
+main .right-banner .separator {
+    margin: auto;
+}
+
+main .right-banner .btn-connect button.btn-register {
+    border: 1px solid rgb(110, 158, 248);
+    background: rgb(110, 158, 248);
+    border-radius: 50px;
+    padding: 10px 112px;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #FFF;
+}
+
+main .right-banner .btn-connect button.btn-login {
+    border: 1px solid cornflowerblue;
+    border-radius: 50px;
+    padding: 10px 94px;
+    margin-top: 5px;
+    font-weight: 600;
+    background-color: transparent;
+    color: #FFF;
+    cursor: pointer;
+}
+
+main .right-banner .btn-connect {
+    margin-top: 20px;
+    display: inline-grid;
+}
