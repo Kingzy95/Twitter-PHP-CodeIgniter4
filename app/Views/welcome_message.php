@@ -6,7 +6,7 @@
         <meta name="description" content="The small framework with powerful features">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" type="image/png" href="/favicon.ico"/>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/fontawesome.min.css" integrity="sha512-RvQxwf+3zJuNwl4e0sZjQeX7kUa3o82bDETpgVCH2RiwYSZVDdFJ7N/woNigN/ldyOOoKw8584jM4plQdt8bhA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/fontawesome.min.js" integrity="sha512-j3gF1rYV2kvAKJ0Jo5CdgLgSYS7QYmBVVUjduXdoeBkc4NFV4aSRTi+Rodkiy9ht7ZYEwF+s09S43Z1Y+ujUkA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
@@ -31,23 +31,26 @@
                     <div class="separator">
                         <span>ou</span>
                     </div>
-                    <button class="btn-login" onclick="openForm()">Se connecter</button>
+                    <button class="btn-login" onclick="openLogin()">Se connecter</button>
                 </div>
             </aside>
 
             <div class="form-popup" id="myForm">
                 <form action="/action_page.php" class="form-container">
+
+                    <button type="button" class="cancel" onclick="closeLogin()">X</button>
+
                     <img src="<?php echo base_url('/images/logo.png'); ?>" />
-                    <h1>Connectez-vous à <br>Twitter</h1>
+                    
+                    <h1 class="title-popup">Connectez-vous à <br>Twitter</h1>
 
-                    <label for="email"><b>Email</b></label>
-                    <input type="text" placeholder="Enter Email" name="email" required>
+                    <label for="email"></label>
+                    <input type="text" placeholder="Addresse e-mail" name="email" required>
 
-                    <label for="psw"><b>Password</b></label>
-                    <input type="password" placeholder="Enter Password" name="psw" required>
+                    <label for="psw"></label>
+                    <input type="password" placeholder="Mot de Passe" name="psw" required>
 
-                    <button type="submit" class="btn">Login</button>
-                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                    <button type="submit" class="btn">Se connecter</button>
                 </form>
             </div>
         </main>

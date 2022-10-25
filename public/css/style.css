@@ -58,6 +58,7 @@ main .right-banner h2 {
 
 main .right-banner .separator {
     margin: auto;
+    font-weight: lighter;
 }
 
 main .right-banner .btn-connect button.btn-register {
@@ -65,20 +66,32 @@ main .right-banner .btn-connect button.btn-register {
     background: rgb(110, 158, 248);
     border-radius: 50px;
     padding: 10px 112px;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
     font-weight: 600;
     color: #FFF;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button.btn-register:hover {
+    background: rgb(49, 121, 255);
 }
 
 main .right-banner .btn-connect button.btn-login {
-    border: 1px solid cornflowerblue;
+    border: 1px solid rgb(110, 158, 248);
     border-radius: 50px;
     padding: 10px 94px;
-    margin-top: 5px;
+    margin-top: 8px;
     font-weight: 600;
     background-color: transparent;
     color: #FFF;
     cursor: pointer;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button.btn-login:hover {
+    background: #FFF;
 }
 
 main .right-banner .btn-connect {
